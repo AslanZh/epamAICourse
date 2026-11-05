@@ -1,22 +1,41 @@
 # GenAI Vocabulary
 
-- **Generative AI (GenAI)** — искусственный интеллект, который создаёт новый контент: текст, код, изображения или другие материалы.
-- **Large Language Model (LLM)** — языковая модель, обученная на больших объёмах текста и способная обрабатывать и генерировать текст.
-- **Prompt** — инструкция или запрос, который пользователь передаёт модели.
-- **Prompt engineering** — подбор и формулирование запросов, чтобы получать от модели более полезные ответы.
-- **Retrieval-Augmented Generation (RAG)** — подход, при котором модель сначала получает релевантные сведения из внешних источников, а затем формирует ответ на их основе.
-- **Embedding** — числовое представление текста или другого объекта, которое помогает сравнивать смысловую близость.
-- **Vector database** — база данных, предназначенная для хранения и поиска векторов, например текстовых embedding-векторов.
-- **Semantic search** — поиск по смыслу запроса, а не только по совпадению отдельных слов.
-- **Hallucination** — ответ модели, который звучит убедительно, но содержит выдуманные или неверные сведения.
-- **Grounding** — привязка ответа модели к проверяемым данным или источникам.
-- **Foundation model** — большая предварительно обученная модель, которую можно адаптировать для разных задач.
-- **Fine-tuning** — дополнительное обучение модели на специализированных примерах для улучшения выполнения конкретной задачи.
-- **Inference** — использование уже обученной модели для получения результата по входным данным.
-- **Token** — единица текста, на которые модель разбивает входные данные и ответы при обработке.
-- **Context window** — объём текста и других данных, который модель может учитывать за один запрос.
-- **Guardrails** — правила и технические ограничения, которые помогают удерживать поведение AI-приложения в допустимых рамках.
-- **Human-in-the-loop** — участие человека в проверке или принятии решений, где автоматического ответа недостаточно.
-- **Latency** — время между отправкой запроса и получением ответа.
-- **Data privacy** — защита персональных и конфиденциальных данных при работе с AI-системой.
-- **Evaluation** — проверка качества модели или приложения по заранее выбранным критериям и тестовым примерам.
+- **Generative AI (GenAI)** — Artificial intelligence that creates new content, such as text, code, images, and audio.
+
+- **Large Language Model (LLM)** — A machine learning model trained on large amounts of text to understand and generate human language.
+
+- **Prompt** — An instruction or question given to an AI model to get a specific response.
+
+- **Prompt Engineering** — The process of designing and improving prompts to get more accurate and useful AI responses.
+
+- **Retrieval-Augmented Generation (RAG)** — An approach that combines information retrieval with text generation to produce answers based on external data.
+
+- **Embedding** — A numerical representation of text or other data that captures its semantic meaning.
+
+- **Vector Database** — A database designed to store and search vector embeddings efficiently.
+
+- **Semantic Search** — A search technique that finds information based on meaning rather than exact keyword matches.
+
+- **Hallucination** — When an AI model generates information that sounds correct but is actually false or misleading.
+
+- **Grounding** — Connecting AI-generated answers to reliable external information or data sources.
+
+- **Foundation Model** — A large pre-trained AI model that can be adapted for different tasks and applications.
+
+- **Fine-tuning** — Additional training of a pre-trained model using specialized data to improve its performance for a particular task.
+
+- **Inference** — The process of using a trained AI model to generate predictions or responses.
+
+- **Token** — A unit of text that a language model processes, such as a word, part of a word, or punctuation mark.
+
+- **Context Window** — The maximum amount of information a model can process in a single interaction.
+
+- **Guardrails** — Rules and technical restrictions designed to ensure that an AI application behaves safely and reliably.
+
+- **Human-in-the-loop** — An approach where humans participate in reviewing or approving AI-generated results.
+
+- **Latency** — The time required for an AI system to process a request and return a response.
+
+- **Data Privacy** — The protection of personal and confidential information when using AI systems.
+
+- **Evaluation** — The process of measuring an AI model's quality, accuracy, and performance using defined criteria.
