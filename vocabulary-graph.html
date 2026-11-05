@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GenAI Vocabulary Relationship Graph</title>
+<style>
+body{font:16px/1.45 system-ui,sans-serif;margin:0;padding:24px;background:#f6f7fb;color:#202431}
+main{max-width:1000px;margin:auto}
+svg{width:100%;background:white;border:1px solid #ddd;border-radius:12px}
+.edge{stroke:#aeb7c7;stroke-width:1.5}
+.node text{text-anchor:middle;font-size:12px;fill:#18202c}
+.node .count{font-size:10px;fill:white;font-weight:bold}
+.legend{display:flex;gap:16px;flex-wrap:wrap}
+.dot{display:inline-block;width:12px;height:12px;border-radius:50%;margin-right:6px}
+.blue{background:#3c78d8}.orange{background:#e69a32}
+.note{color:#596273;font-size:.9rem}
+</style>
+</head>
+<body>
+<main>
+<h1>GenAI Vocabulary — Relationship Graph</h1>
+<p>Connections between application areas in <code>research.md</code> and terms from <code>vocabulary.md</code>.</p>
+<div class="legend">
+<span><i class="dot blue"></i>Explicit mention</span>
+<span><i class="dot orange"></i>Implicit / concept-level use</span>
+</div>
+<svg viewBox="0 0 900 600" role="img" aria-label="Relationship graph of GenAI concepts and application areas">
+<g class="edges">
+<path class="edge" d="M450 300L160 110M450 300L450 90M450 300L740 110M450 300L160 490M450 300L740 490M160 110L450 90M450 90L740 110M160 110L160 490M740 110L740 490M160 490L740 490"/>
+</g>
+<g class="node" transform="translate(450 300)">
+<circle r="65" fill="#344a70"/>
+<text y="-5" style="fill:white;font-weight:bold">Generative AI</text>
+<text y="13" style="fill:white;font-weight:bold">and LLMs</text>
+<text class="count" y="32">central concept</text>
+</g>
+<g class="node" transform="translate(160 110)">
+<circle r="55" fill="#3c78d8"/>
+<text y="-5">Customer</text><text y="12">support chatbots</text>
+<text class="count" y="31">E: 2 · I: 2</text>
+</g>
+<g class="node" transform="translate(450 90)">
+<circle r="55" fill="#3c78d8"/>
+<text y="-5">Code</text><text y="12">generation</text>
+<text class="count" y="31">E: 2 · I: 2</text>
+</g>
+<g class="node" transform="translate(740 110)">
+<circle r="55" fill="#3c78d8"/>
+<text y="-5">RAG / enterprise</text><text y="12">knowledge search</text>
+<text class="count" y="31">E: 2 · I: 2</text>
+</g>
+<g class="node" transform="translate(160 490)">
+<circle r="55" fill="#e69a32"/>
+<text y="-5">Marketing</text><text y="12">and content</text>
+<text class="count" y="31">E: 0 · I: 2</text>
+</g>
+<g class="node" transform="translate(740 490)">
+<circle r="55" fill="#e69a32"/>
+<text y="-5">Document</text><text y="12">summarization</text>
+<text class="count" y="31">E: 0 · I: 2</text>
+</g>
+<g class="node" transform="translate(450 490)">
+<circle r="48" fill="#6b7c93"/>
+<text y="-5">Human</text><text y="12">review</text>
+<text class="count" y="31">I: 3</text>
+</g>
+</svg>
+<p class="note">E = explicit mention; I = implicit or concept-level use. Counts are approximate manual annotations of the current report, not automatically computed statistics.</p>
+</main>
+</body>
+</html>
